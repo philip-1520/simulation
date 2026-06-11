@@ -21,7 +21,7 @@ test = {'delta_time': 0.01, -> time step of the simulation
         'randomized_radius': True}
 
 Returns:
-- An animation of the particles with the respective total kinetic energy graph (see test_graph.png).
+- An animation of the particles with the respective total kinetic energy graph (see microcanonical_ensemble.gif).
 """
 
 import numpy as np
@@ -288,6 +288,6 @@ hydrogen_gas = {'delta_time': 1.0e-5,
         'randomized_radius': True}
 
 if __name__ == '__main__': 
-    simulation = Simulation(**hydrogen_gas)
+    simulation = Simulation(**test)
     data = simulation.simulate()
     simulation.animate(data)
